@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="freelanceMoney.css">
+    <title>Freelance Money</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Freelance Money</h1>
+        <p class="subtitle">Calcule de gains en freelance</p>
+    </header>
+        <form class="formCalcul" id="formCalculGain">
+            <div class="pricing sectionCalcule">
+                <h2>Vos tarifs</h2>
+                <div class="formContainer">
+                    <div class="form-field">
+                        <label>Taux Horaire</label>
+                        <input name="TH" type="number" placeholder="ex: 70" class="input">
+                    </div>
+                    <div class="form-field">
+                        <label>Tarif Jour</label>
+                        <input name="TJM"  type="number" placeholder="490" class="input">
+                    </div>
+                    <div class="form-field">
+                        <label>Extras</label>
+                        <input name="extras" type="number" placeholder="ex: 47" class="input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="quantité sectionCalcule">
+                <h2>Quantitées</h2>
+                <div class="formContainer">
+                    <div class="form-field">
+                        <label>Nombre d'heure(s)</label>
+                        <input name="qteTH" type="number" placeholder="ex: 140" class="input">
+                    </div>
+                    <div class="form-field">
+                        <label>Nombre de jour(s)</label>
+                        <input name="qteTJM" type="number" placeholder="ex: 20" class="input">
+                    </div>
+                    <div class="form-field">
+                        <label>Nombre d'extras</label>
+                        <input name="qteextras" type="number" placeholder="ex: 7" class="input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="fees sectionCalcule">
+                <h2>Charges</h2>
+                <div class="formContainer">
+                    <div class="form-field">
+                        <label>En %</label>
+                        <input name="charges" type="number" placeholder="ex: 5.5" class="input">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="validation sectionCalcule">
+                <button type="button" id="buttonValidate">Calculer</button>
+            </div>
+
+            <div class="resultat sectionCalcule">
+                <div class="resultatDiv brut">
+                    <p>BRUT</p>
+                    <p id="resultatBrut"> 0€ </p>
+                </div>
+
+                <div class="resultatDiv charges">
+                    <p>TAXES</p>
+                    <p id="resultatCharges"> 0€ </p>
+                </div>
+
+                <div class="resultatDiv net">
+                    <p>NET</p>
+                    <p id="resultatNet"> 0€ </p>
+                </div>
+            </div>
+        </form>
+
+
+    <script src="freelanceMoney.js"></script>
+</body>
+
+</html>

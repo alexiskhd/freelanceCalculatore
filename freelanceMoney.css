@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(230, 241, 235);
+}
+
+.title{
+    margin: auto;
+    width: 300px;
+    padding-top: 50px;
+}
+
+.subtitle {
+    margin: auto;
+    width: 260px;
+    margin-bottom: 30px;
+    
+}
+
+
+.formCalcul{
+    width: 700px;
+    margin: auto;
+    box-shadow: 0px 2px 5px black;
+    background-color: rgb(169, 189, 177);
+    margin-bottom: 80px;
+    border-radius: 10px;
+
+}   
+
+.sectionCalcule{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.formContainer{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+input{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.input{
+    padding-left: 10px;
+}
+
+.validation{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.resultat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+button{
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 0px 2px 4px black;
+    cursor: pointer;
+    background-color: rgb(102, 155, 121);
+    color: black;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: ease-in-out 0.2s;
+}
+
+button:hover{
+    background-color:  rgb(37, 91, 39);
+    transition: ease-in-out 0.3s;
+    color: whitesmoke;
+}
+
+.brut{
+    background-color: rgb(188, 84, 84);
+    padding: 10px;
+    width: 40px;
+    border-radius: 10px; 
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.charges{
+    background-color: rgb(163, 159, 159);
+    padding: 10px;
+    width: 40px;
+    border-radius: 10px; 
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.net{
+    background-color: rgb(103, 165, 191);
+    padding: 10px;
+    width: 40px;
+    border-radius: 10px; 
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.resultatDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px black;
+    width: 90px;
+    height: 90px;
+}
+
+
+
